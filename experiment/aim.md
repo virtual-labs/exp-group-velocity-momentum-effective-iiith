@@ -1,1 +1,1 @@
-### Aim of the experiment
+To visualize and analyze the energy–wavevector (E–k) relationship in semiconductors by calculating group velocity, momentum, and effective mass, and to explore variations in bandgap energy across different materials to understand charge carrier dynamics.

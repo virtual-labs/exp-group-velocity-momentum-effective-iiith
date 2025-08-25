@@ -1,39 +1,104 @@
 {
-  "version": 2.0,
+  "version": "2.0",
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+      "question": "1. In an E–k diagram, a steeper slope indicates:",
+      "options": {
+        "A": "Lower group velocity",
+        "B": "Higher group velocity",
+        "C": "Constant group velocity",
+        "D": "Zero group velocity"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+      "answer": "B",
+      "explanation": "Group velocity is proportional to the slope (dE/dk). A steeper slope means a higher rate of change of energy with wavevector, giving a higher group velocity."
     },
     {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+      "question": "2. Which relation correctly defines the crystal momentum of an electron?",
+      "options": {
+        "A": "p = m*v",
+        "B": "p = ℏk",
+        "C": "p = Eg/k",
+        "D": "p = qE"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "answer": "B",
+      "explanation": "In semiconductor physics, crystal momentum is given by p = ℏk, where ℏ is the reduced Planck’s constant and k is the wavevector."
+    },
+    {
+      "question": "3. Which semiconductor material among Si, GaAs, and Ge has the highest bandgap energy at room temperature?",
+      "options": {
+        "A": "Silicon (Si)",
+        "B": "Gallium Arsenide (GaAs)",
+        "C": "Germanium (Ge)",
+        "D": "All have the same Eg"
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
+      "answer": "B",
+      "explanation": "Gallium Arsenide (GaAs) has the highest bandgap (~1.42 eV), followed by Silicon (~1.1 eV) and Germanium (~0.66 eV)."
+    },
+    {
+      "question": "4. A highly curved E–k diagram around the band minimum implies:",
+      "options": {
+        "A": "Larger effective mass",
+        "B": "Smaller effective mass",
+        "C": "Constant effective mass",
+        "D": "Zero effective mass"
+      },
+      "answer": "B",
+      "explanation": "Effective mass is inversely related to the curvature of the E–k curve. Higher curvature means the particle behaves as if it has a smaller effective mass."
+    },
+    {
+      "question": "5. The effective mass (m*) of an electron in a semiconductor depends on:",
+      "options": {
+        "A": "The slope of the E–k curve",
+        "B": "The curvature of the E–k curve",
+        "C": "The bandgap energy only",
+        "D": "The external electric field strength"
+      },
+      "answer": "B",
+      "explanation": "Effective mass is calculated from m* = ℏ² / (d²E/dk²), meaning it depends directly on the curvature of the E–k graph, not just the slope."
+    },
+    {
+      "question": "6. If the bandgap energy Eg of a material is 2 eV, what is the approximate frequency of a photon required to bridge this gap?",
+      "options": {
+        "A": "4.8 × 10^14 Hz",
+        "B": "7.3 × 10^14 Hz",
+        "C": "3.0 × 10^15 Hz",
+        "D": "1.2 × 10^14 Hz"
+      },
+      "answer": "B",
+      "explanation": "Using E = hf, f = E/h. Converting Eg = 2 eV to joules → 2 × 1.6×10^-19 J = 3.2×10^-19 J. Thus, f = 3.2×10^-19 / 6.626×10^-34 ≈ 7.3×10^14 Hz."
+    },
+    {
+      "question": "7. If ℏ = 1.05 × 10^-34 J·s and k = 2 × 10^9 m^-1, what is the crystal momentum p of an electron?",
+      "options": {
+        "A": "2.1 × 10^-25 kg·m/s",
+        "B": "1.05 × 10^-23 kg·m/s",
+        "C": "2.1 × 10^-24 kg·m/s",
+        "D": "5.2 × 10^-26 kg·m/s"
+      },
+      "answer": "A",
+      "explanation": "Using p = ℏk, we get p = 1.05×10^-34 × 2×10^9 = 2.1×10^-25 kg·m/s."
+    },
+    {
+      "question": "8. If the conduction band curvature decreases, what happens to the mobility of electrons?",
+      "options": {
+        "A": "It increases",
+        "B": "It decreases",
+        "C": "It remains constant",
+        "D": "It becomes infinite"
+      },
+      "answer": "B",
+      "explanation": "Mobility μ is inversely related to effective mass (μ ∝ 1/m*). If curvature decreases, effective mass increases, hence mobility decreases."
+    },
+    {
+      "question": "9. A semiconductor with Eg = 1.5 eV primarily absorbs photons with wavelengths:",
+      "options": {
+        "A": "Greater than 1000 nm",
+        "B": "Between 400–800 nm",
+        "C": "Less than 200 nm",
+        "D": "Exactly 1550 nm"
+      },
+      "answer": "B",
+      "explanation": "Using λ ≈ 1240/Eg, λ ≈ 1240/1.5 ≈ 827 nm. This lies in the visible to near-infrared range, so photons between 400–800 nm are most effectively absorbed."
     }
   ]
 }
