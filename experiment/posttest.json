@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "1. In an E–k diagram, a steeper slope indicates:",
+      "question": "1. In an E–k diagram, a steeper slope indicates :",
       "options": {
         "a": "Lower group velocity",
         "b": "Higher group velocity",
@@ -93,7 +93,7 @@
       "question": "9. A semiconductor with Eg = 1.5 eV primarily absorbs photons with wavelengths:",
       "options": {
         "a": "Greater than 1000 nm",
-        "b": "Between 400–800 nm",
+        "b": "Between 400-800 nm",
         "c": "Less than 200 nm",
         "d": "Exactly 1550 nm"
       },
