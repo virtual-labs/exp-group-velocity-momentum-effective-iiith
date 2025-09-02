@@ -32,7 +32,7 @@ $$
 - Holes correspond to **unoccupied states** in the **valence band**.
 - Near the **band extrema**, the curvature of the **E–k** plot is directly linked to the **effective mass** of carriers.
 
-<p><img src="images/EK_diagram.png" ></p> 
+<p><img src="images/EKdiagram.png" ></p> 
 
 ---
 
@@ -59,7 +59,7 @@ $$
 \frac{dv}{dt} = \frac{1}{m^*} \cdot F
 $$
 
-<p><img src="images/Energy_Band.png" ></p> 
+<p><img src="images/EnergyBand.png" ></p> 
 
 ---
 
@@ -85,6 +85,6 @@ Where:
   - CBM and VBM occur at **different** \( k \)-values.  
   - Requires **phonon assistance** for **momentum conservation**.
 
-<p><img src="images/Ek.png" ></p> 
+<p><img src="images/EK.png" ></p> 
 
 ---
