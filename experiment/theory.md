@@ -32,7 +32,7 @@ $$
 - Holes correspond to **unoccupied states** in the **valence band**.
 - Near the **band extrema**, the curvature of the **E–k** plot is directly linked to the **effective mass** of carriers.
 
-<p><img src="images/EKdiagram.png" ></p> 
+<p><img src="images/EKdiag.png" ></p> 
 
 ---
 
