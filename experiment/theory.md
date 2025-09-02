@@ -13,10 +13,9 @@ $$
 
 Where:
 
-- $$ v_g $$ → Group velocity  
-- $$ \hbar $$ → Reduced Planck's constant  
-- $$ \frac{dE}{dk} $$ → Slope of the **E–k** curve
-
+- \( v_g \) → Group velocity  
+- \( \hbar \) → Reduced Planck's constant  
+- \( \frac{dE}{dk} \) → Slope of the **E–k** curve
 
 **Interpretation of the slope:**
 
@@ -66,8 +65,7 @@ $$
 
 ## **Band Gap Energy**
 
-The **band gap energy** $$E_g$$ is the energy difference between the **conduction band minimum (CBM)** and the **valence band maximum (VBM)**:
-
+The **band gap energy** (\( E_g \)) is the energy difference between the **conduction band minimum (CBM)** and the **valence band maximum (VBM)**:
 
 $$
 E_g = E_c - E_v
@@ -75,8 +73,8 @@ $$
 
 Where:
 
-- $$E_c$$ → Conduction band edge energy  
-- $$E_v$$ → Valence band edge energy
+- \( E_c \) → Conduction band edge energy  
+- \( E_v \) → Valence band edge energy  
 
 **Types of band gaps:**
 
