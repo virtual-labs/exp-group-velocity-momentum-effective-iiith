@@ -1359,9 +1359,9 @@
         <div id="bandstructure" class="experiment-content active">
             <div class="main-content">
                 <div class="chart-container">
-                    <h3>Interactive E-k Diagram & Density of States</h3>
+                    <h3>Understanding E-K diagram and related parameters (v<sub>g</sub>, P, m*)</h3>
                     <div class="animation-controls">
-                        <button class="btn play-btn" onclick="toggleAnimation('bandstructure')">▶ Show Electron Transitions</button>
+                        <button class="btn play-btn" onclick="toggleAnimation('bandstructure')"> Show Electron Property on the E-k curve</button>
                     </div>
                     <div id="ekChart" style="height: 400px;"></div>
                     
@@ -1426,7 +1426,7 @@
 
                     <div class="parameter-slider">
                         <div class="slider-container">
-                            <span class="slider-label">k-vector (1/m × 10⁹):</span>
+                            <span class="slider-label">k-vector (1/m × 10<sup>9</sup>):</span>
                             <input type="range" id="kValue" min="-3" max="3" step="0.01" value="0" style="flex: 1;">
                             <span class="slider-value" id="kDisplay">0.00</span>
                         </div>
@@ -1442,18 +1442,18 @@
 
                     <div class="parameter-slider">
                         <div class="slider-container">
-                            <span class="slider-label">Doping (cm⁻³):</span>
+                            <span class="slider-label">Doping (cm<sup>-3</sup>):</span>
                             <input type="range" id="dopingSlider" min="14" max="20" step="0.1" value="15" style="flex: 1;">
-                            <span class="slider-value" id="dopingDisplay">10¹⁵</span>
+                            <span class="slider-value" id="dopingDisplay">10<sup>15</sup></span>
                         </div>
                     </div>
                     
                     <div class="point-info">
                         <h4>Selected Point Info</h4>
                         <div id="pointDetails">
-                            <p><strong>k:</strong> 0.000 × 10⁹ m⁻¹</p>
-                            <p><strong>E_c:</strong> 0.560 eV</p>
-                            <p><strong>E_v:</strong> -0.560 eV</p>
+                            <p><strong>k:</strong> 0.000 × 10<sup>9</sup> m<sup>-1</sup></p>
+                            <p><strong>E<sub>c</sub>:</strong> 0.560 eV</p>
+                            <p><strong>E<sub>v</sub>:</strong> -0.560 eV</p>
                             <p><strong>ΔE:</strong> 1.120 eV</p>
                         </div>
                     </div>
@@ -1465,38 +1465,38 @@
                 <div class="physics-grid">
                     <div class="info-card">
                         <div class="info-value" id="groupVelocity">0.00</div>
-                        <div class="info-label">Group Velocity (m/s × 10⁵)</div>
-                        <div class="formula">v_g = (1/ℏ) × dE/dk</div>
+                        <div class="info-label">Group Velocity (m/s × 10<sup>5</sup>)</div>
+                        <div class="formula">v<sub>g</sub> = (1/ℏ) × dE/dk</div>
                     </div>
 
                     <div class="info-card">
                         <div class="info-value" id="momentum">0.00</div>
-                        <div class="info-label">Crystal Momentum (kg⋅m/s × 10⁻²⁴)</div>
+                        <div class="info-label">Crystal Momentum (kg·m/s × 10<sup>-24</sup>)</div>
                         <div class="formula">p = ℏk</div>
                     </div>
 
                     <div class="info-card">
                         <div class="info-value" id="effectiveMass">0.00</div>
-                        <div class="info-label">Effective Mass (m₀)</div>
-                        <div class="formula">m* = ℏ² / (d²E/dk²)</div>
+                        <div class="info-label">Effective Mass (m<sub>0</sub>)</div>
+                        <div class="formula">m* = ℏ<sup>2</sup> / (d<sup>2</sup>E/dk<sup>2</sup>)</div>
                     </div>
 
                     <div class="info-card">
                         <div class="info-value" id="bandgap">1.12</div>
                         <div class="info-label">Bandgap Energy (eV)</div>
-                        <div class="formula">E_g = E_c - E_v</div>
+                        <div class="formula">E<sub>g</sub> = E<sub>c</sub> - E<sub>v</sub></div>
                     </div>
 
                     <div class="info-card">
-                        <div class="info-value" id="carrierDensity">1.45×10¹⁰</div>
-                        <div class="info-label">Intrinsic Density (cm⁻³)</div>
-                        <div class="formula">n_i = √(N_c N_v) exp(-E_g/2kT)</div>
+                        <div class="info-value" id="carrierDensity">1.45×10<sup>10</sup></div>
+                        <div class="info-label">Intrinsic Density (cm<sup>-3</sup>)</div>
+                        <div class="formula">n<sub>i</sub> = √(N<sub>c</sub> N<sub>v</sub>) exp(-E<sub>g</sub>/2kT)</div>
                     </div>
 
                     <div class="info-card">
                         <div class="info-value" id="fermiLevel">0.56</div>
                         <div class="info-label">Fermi Level (eV)</div>
-                        <div class="formula">E_f = E_i + kT ln(N_d/n_i)</div>
+                        <div class="formula">E<sub>f</sub> = E<sub>i</sub> + kT ln(N<sub>d</sub>/n<sub>i</sub>)</div>
                     </div>
                 </div>
             </div>
@@ -1527,13 +1527,13 @@
                         </div>
                         <div>
                             <span style="color: #fbbf24;">💥 <strong>Recombination:</strong></span><br>
-                            <span style="margin-left: 16px; font-size: 10px;">e⁻ + h⁺ → photon</span>
+                            <span style="margin-left: 16px; font-size: 10px;">e<sup>-</sup> + h<sup>+</sup> → photon</span>
                         </div>
                     </div>
                 </div>
                 
                 <div class="carrier-visualization">
-                    <h3>Advanced Carrier Transport Simulation</h3>
+                    <h3>Carrier Transport Simulation</h3>
                     <div class="animation-controls">
                         <button class="btn play-btn" onclick="startCarrierAnimation()">▶ Start Simulation</button>
                         <button class="btn pause-btn" onclick="pauseCarrierAnimation()">⏸ Pause</button>
@@ -1592,7 +1592,7 @@
 
                     <div class="parameter-slider">
                         <div class="slider-container">
-                            <span class="slider-label">Mobility (cm²/V⋅s):</span>
+                            <span class="slider-label">Mobility (cm<sup>2</sup>/V·s):</span>
                             <input type="range" id="mobility" min="100" max="2000" step="25" value="1400" style="flex: 1;">
                             <span class="slider-value" id="mobilityDisplay">1400</span>
                         </div>
@@ -1600,9 +1600,9 @@
 
                     <div class="parameter-slider">
                         <div class="slider-container">
-                            <span class="slider-label">Carrier Density (cm⁻³):</span>
+                            <span class="slider-label">Carrier Density (cm<sup>-3</sup>):</span>
                             <input type="range" id="carrierDensitySlider" min="14" max="18" step="0.1" value="16" style="flex: 1;">
-                            <span class="slider-value" id="densityDisplay">10¹⁶</span>
+                            <span class="slider-value" id="densityDisplay">10<sup>16</sup></span>
                         </div>
                     </div>
                 </div>
@@ -1621,11 +1621,11 @@
                     </div>
                     <div class="advanced-measurement">
                         <div class="info-value" id="current">0.0</div>
-                        <div class="info-label">Current Density (A/cm²)</div>
+                        <div class="info-label">Current Density (A/cm<sup>2</sup>)</div>
                     </div>
                     <div class="advanced-measurement">
                         <div class="info-value" id="resistivity">0.0</div>
-                        <div class="info-label">Resistivity (Ω⋅cm)</div>
+                        <div class="info-label">Resistivity (Ω·cm)</div>
                     </div>
                     <div class="advanced-measurement">
                         <div class="info-value" id="diffusionLength">0.0</div>
@@ -1687,8 +1687,8 @@
                         <h4 style="color: #374151; font-size: 0.9rem; margin-bottom: 12px; text-align: center;">Temperature Properties</h4>
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
                             <div class="advanced-measurement" style="margin: 0; padding: 10px; font-size: 0.8rem;">
-                                <div class="info-value" id="intrinsicDensity" style="font-size: 1.1rem;">1.45×10¹⁰</div>
-                                <div class="info-label" style="font-size: 0.75rem;">Intrinsic Density (cm⁻³)</div>
+                                <div class="info-value" id="intrinsicDensity" style="font-size: 1.1rem;">1.45×10<sup>10</sup></div>
+                                <div class="info-label" style="font-size: 0.75rem;">Intrinsic Density (cm<sup>-3</sup>)</div>
                             </div>
                             <div class="advanced-measurement" style="margin: 0; padding: 10px; font-size: 0.8rem;">
                                 <div class="info-value" id="bandgapTemp" style="font-size: 1.1rem;">1.12</div>
@@ -1696,10 +1696,10 @@
                             </div>
                             <div class="advanced-measurement" style="margin: 0; padding: 10px; font-size: 0.8rem;">
                                 <div class="info-value" id="mobilityTemp" style="font-size: 1.1rem;">1400</div>
-                                <div class="info-label" style="font-size: 0.75rem;">Mobility (cm²/V⋅s)</div>
+                                <div class="info-label" style="font-size: 0.75rem;">Mobility (cm<sup>2</sup>/V·s)</div>
                             </div>
                             <div class="advanced-measurement" style="margin: 0; padding: 10px; font-size: 0.8rem;">
-                                <div class="info-value" id="thermalVelocity" style="font-size: 1.1rem;">1.0×10⁷</div>
+                                <div class="info-value" id="thermalVelocity" style="font-size: 1.1rem;">1.0×10<sup>7</sup></div>
                                 <div class="info-label" style="font-size: 0.75rem;">Thermal Velocity (cm/s)</div>
                             </div>
                         </div>
@@ -1713,7 +1713,7 @@
             <div class="challenge-container">
                 <div style="text-align: center; margin-bottom: 30px;">
                     <h2 style="color: #1f2937; margin-bottom: 10px;">🧠 Semiconductor Physics Challenges</h2>
-                    <p style="color: #6b7280; font-size: 1.1rem;">Test your understanding with interactive problems and quizzes</p>
+                    <p style="color: #6b7280; font-size: 1.1rem;">Test your understanding with problems and quizzes</p>
                     
                     <div class="challenge-stats">
                         <div class="stat-item">
@@ -1832,7 +1832,7 @@
                     <div class="challenge-hint" id="challenge3Hint">
                         <strong>💡 Equation Hints:</strong>
                         <ul>
-                            <li>Effective mass: m* = ℏ²/(d²E/dk²)</li>
+                            <li>Effective mass: m* = ℏ<sup>2</sup>/(d<sup>2</sup>E/dk<sup>2</sup>)</li>
                             <li>Fermi-Dirac: f(E) = 1/(1 + exp((E-EF)/kBT))</li>
                             <li>Drift current: J = nqμE</li>
                         </ul>
@@ -1940,7 +1940,7 @@
             <p>The energy-momentum relationship determines carrier dynamics and transport properties in semiconductors.</p>
             
             <h4>Effective Mass</h4>
-            <p>The curvature of energy bands determines how carriers respond to external forces: m* = ℏ²/(d²E/dk²).</p>
+            <p>The curvature of energy bands determines how carriers respond to external forces: m* = ℏ<sup>2</sup>/(d<sup>2</sup>E/dk<sup>2</sup>).</p>
             
             <h4>Quantum Confinement</h4>
             <p>When carrier motion is restricted in one or more dimensions, energy levels become quantized.</p>
@@ -2161,14 +2161,14 @@
             {
                 target: ".experiment-tabs",
                 title: "Navigation Tabs",
-                content: "The lab is organized into different sections:<br><strong>• Band Structure:</strong> E-k relationships and effective mass<br><strong>• Carrier Transport:</strong> Drift, diffusion, and advanced mechanisms<br><strong>• Temperature Analysis:</strong> Temperature effects on carriers<br><strong>• Challenges:</strong> Interactive physics problems",
+                content: "The lab is organized into different sections:<br><strong>• Band Structure:</strong> E-k relationships and effective mass<br><strong>• Carrier Transport:</strong> Drift, diffusion, and advanced mechanisms<br><strong>• Temperature Analysis:</strong> Temperature effects on carriers<br><strong>• Challenges:</strong> physics problems",
                 position: "bottom",
                 challenge: null
             },
             {
                 target: "#ekChart",
                 title: "Band Structure Analysis",
-                content: "This section lets you explore the E-k diagram and understand how band curvature affects carrier effective mass. The effective mass formula m* = ℏ²/(d²E/dk²) shows the relationship between band curvature and carrier properties.",
+                content: "This section lets you explore the E-k diagram and understand how band curvature affects carrier effective mass. The effective mass formula m* = ℏ<sup>2</sup>/(d<sup>2</sup>E/dk<sup>2</sup>) shows the relationship between band curvature and carrier properties.",
                 position: "right",
                 challenge: {
                     type: "interaction",
@@ -2208,14 +2208,14 @@
             {
                 target: "#temperatureChart",
                 title: "Temperature Effects",
-                content: "Temperature dramatically affects semiconductor behavior through carrier concentration (ni ∝ exp(-Eg/2kT)), mobility (μ ∝ T^-n), and diffusion (D ∝ T).",
+                content: "Temperature dramatically affects semiconductor behavior through carrier concentration (n<sub>i</sub> ∝ exp(-E<sub>g</sub>/2kT)), mobility (μ ∝ T<sup>-n</sup>), and diffusion (D ∝ T).",
                 position: "right",
                 challenge: null
             },
             {
                 target: "#temperature .controls-panel",
                 title: "Temperature Analysis Tools",
-                content: "Use the temperature slider and range controls to study how carrier properties change with temperature. The Fermi-Dirac distribution f(E) = 1/(1+exp((E-EF)/kT)) governs carrier statistics.",
+                content: "Use the temperature slider and range controls to study how carrier properties change with temperature. The Fermi-Dirac distribution f(E) = 1/(1+exp((E-E<sub>F</sub>)/kT)) governs carrier statistics.",
                 position: "left",
                 challenge: {
                     type: "interaction",
@@ -2225,8 +2225,8 @@
             },
             {
                 target: ".challenge-container",
-                title: "Interactive Challenges - End of Tour! 🎉",
-                content: "Congratulations! You've completed the guided tour of Advanced Semiconductor Physics. This challenges section offers 5 different types of physics problems to test your understanding:<br><br><strong>• Multiple Choice:</strong> Band structure fundamentals<br><strong>• Fill-in-Blanks:</strong> Physics equations<br><strong>• Numerical:</strong> Quantitative calculations<br><strong>• Advanced:</strong> Complex concepts<br><strong>• Matching:</strong> Concept relationships<br><br>🚀 <strong>Start exploring and learning!</strong> The interactive simulations and challenges await your discovery.",
+                title: "Challenges - End of Tour! 🎉",
+                content: "Congratulations! You've completed the guided tour of Advanced Semiconductor Physics. This challenges section offers 5 different types of physics problems to test your understanding:<br><br><strong>• Multiple Choice:</strong> Band structure fundamentals<br><strong>• Fill-in-Blanks:</strong> Physics equations<br><strong>• Numerical:</strong> Quantitative calculations<br><strong>• Advanced:</strong> Complex concepts<br><strong>• Matching:</strong> Concept relationships<br><br>🚀 <strong>Start exploring and learning!</strong> The simulations and challenges await your discovery.",
                 position: "center",
                 challenge: null
             }
@@ -2304,7 +2304,7 @@
                     <div class="tour-challenge">
                         <div class="tour-challenge-title">
                             <i class="fas fa-tasks"></i>
-                            Interactive Challenge
+                             Challenge
                         </div>
                         <div class="tour-challenge-content">${step.challenge.task}</div>
                     </div>
@@ -2488,7 +2488,7 @@
             // Show achievement
             showAchievement({
                 title: "Challenge Complete!",
-                description: "Great job! You've successfully completed the interactive challenge.",
+                description: "Great job! You've successfully completed the challenge.",
                 icon: "🎯"
             });
         }
@@ -3151,10 +3151,10 @@
             const propertiesHtml = `
                 <p style="margin: 4px 0;"><strong>Bandgap:</strong> ${material.bandgap} eV</p>
                 <p style="margin: 4px 0;"><strong>Crystal:</strong> ${material.crystalStructure}</p>
-                <p style="margin: 4px 0;"><strong>Electron m*:</strong> ${material.effectiveMassElectron} m₀</p>
-                <p style="margin: 4px 0;"><strong>Hole m*:</strong> ${material.effectiveMassHole} m₀</p>
-                <p style="margin: 4px 0;"><strong>Mobility (e⁻):</strong> ${material.mobility_e} cm²/V⋅s</p>
-                <p style="margin: 4px 0;"><strong>Mobility (h⁺):</strong> ${material.mobility_h} cm²/V⋅s</p>
+                <p style="margin: 4px 0;"><strong>Electron m*:</strong> ${material.effectiveMassElectron} m<sub>0</sub></p>
+                <p style="margin: 4px 0;"><strong>Hole m*:</strong> ${material.effectiveMassHole} m<sub>0</sub></p>
+                <p style="margin: 4px 0;"><strong>Mobility (e<sup>-</sup>):</strong> ${material.mobility_e} cm<sup>2</sup>/V·s</p>
+                <p style="margin: 4px 0;"><strong>Mobility (h<sup>+</sup>):</strong> ${material.mobility_h} cm<sup>2</sup>/V·s</p>
                 <p style="margin: 4px 0;"><strong>Dielectric:</strong> ${material.dielectric}</p>
                 <p style="font-style: italic; margin: 8px 0 4px 0; color: #6b7280; font-size: 0.8rem;">${material.description}</p>
             `;
@@ -3473,9 +3473,9 @@
             
             // Update point info
             const pointInfoHtml = `
-                <p><strong>k:</strong> ${currentK.toFixed(3)} × 10⁹ m⁻¹</p>
-                <p><strong>E_c:</strong> ${energyConduction.toFixed(3)} eV</p>
-                <p><strong>E_v:</strong> ${energyValence.toFixed(3)} eV</p>
+                <p><strong>k:</strong> ${currentK.toFixed(3)} × 10<sup>9</sup> m<sup>-1</sup></p>
+                <p><strong>E<sub>c</sub>:</strong> ${energyConduction.toFixed(3)} eV</p>
+                <p><strong>E<sub>v</sub>:</strong> ${energyValence.toFixed(3)} eV</p>
                 <p><strong>ΔE:</strong> ${(energyConduction - energyValence).toFixed(3)} eV</p>
             `;
             document.getElementById('pointDetails').innerHTML = pointInfoHtml;
@@ -5285,7 +5285,7 @@
             <p><strong>Band Structure:</strong> Explore E-k diagrams and energy bands in semiconductors.</p>
             <p><strong>Carrier Transport:</strong> Study drift, diffusion, and advanced transport mechanisms.</p>
             <p><strong>Temperature Analysis:</strong> Analyze temperature effects on carrier dynamics.</p>
-            <p><strong>Challenges:</strong> Test your knowledge with interactive physics problems.</p>
+            <p><strong>Challenges:</strong> Test your knowledge with physics problems.</p>
             
             <h4>Key Concepts:</h4>
             <p><strong>Effective Mass:</strong> m* = ℏ²/(d²E/dk²) - determines carrier mobility</p>
@@ -5293,7 +5293,7 @@
             <p><strong>Fermi-Dirac Distribution:</strong> f(E) = 1/(1 + exp((E-EF)/kT))</p>
             <p><strong>Einstein Relation:</strong> D = μkT/q relates diffusion and mobility</p>
             
-            <h4>Interactive Features:</h4>
+            <h4>Features:</h4>
             <p><strong>🎯 5 Challenge Types:</strong> MCQs, fill-in-blanks, numerical, advanced concepts, matching</p>
             <p><strong>🏆 Achievements:</strong> Unlock badges for mastering concepts</p>
             <p><strong>📊 Dynamic Questions:</strong> Questions randomize on each page load</p>

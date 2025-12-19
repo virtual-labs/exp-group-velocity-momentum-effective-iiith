@@ -39,7 +39,7 @@
       "question": "In a semiconductor, the bandgap energy (Eg) refers to:",
       "answers": {
         "a": "The energy difference between two conduction bands",
-        "b": "The energy required to move an electron from the valence band to the conduction band",
+        "b": "The minimum energy required to move an electron from the valence band to the conduction band",
         "c": "The kinetic energy of free electrons",
         "d": "The energy stored in the lattice vibrations"
       },
