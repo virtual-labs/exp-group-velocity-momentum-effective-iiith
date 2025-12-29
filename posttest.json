@@ -1,0 +1,158 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "In an E–k diagram, a steeper slope indicates:",
+      "answers": {
+        "a": "Lower group velocity",
+        "b": "Higher group velocity",
+        "c": "Constant group velocity",
+        "d": "Zero group velocity"
+      },
+      "explanations": {
+        "a": "Incorrect. Lower slope corresponds to lower group velocity.",
+        "b": "Correct. Group velocity is proportional to slope (dE/dk), so a steeper slope means higher velocity.",
+        "c": "Incorrect. Group velocity is not constant; it varies with slope.",
+        "d": "Incorrect. Zero slope corresponds to zero velocity, not a steeper slope."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which relation correctly defines the crystal momentum of an electron?",
+      "answers": {
+        "a": "p = m*v",
+        "b": "p = ℏk",
+        "c": "p = Eg/k",
+        "d": "p = qE"
+      },
+      "explanations": {
+        "a": "Incorrect. p = m*v applies to classical free particles, not electrons in a crystal.",
+        "b": "Correct. In semiconductor physics, crystal momentum is p = ℏk, where ℏ is the reduced Planck constant.",
+        "c": "Incorrect. Eg/k has no relation to momentum.",
+        "d": "Incorrect. qE gives force, not momentum."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which semiconductor material among Si, GaAs, and Ge has the highest bandgap energy at room temperature?",
+      "answers": {
+        "a": "Silicon (Si)",
+        "b": "Gallium Arsenide (GaAs)",
+        "c": "Germanium (Ge)",
+        "d": "All have the same Eg"
+      },
+      "explanations": {
+        "a": "Incorrect. Silicon has Eg ≈ 1.1 eV, which is lower than GaAs.",
+        "b": "Correct. Gallium Arsenide has the highest bandgap ≈ 1.42 eV at room temperature.",
+        "c": "Incorrect. Germanium has the lowest Eg ≈ 0.66 eV.",
+        "d": "Incorrect. Different semiconductors have different bandgaps."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "A highly curved E–k diagram around the band minimum implies:",
+      "answers": {
+        "a": "Larger effective mass",
+        "b": "Smaller effective mass",
+        "c": "Constant effective mass",
+        "d": "Zero effective mass"
+      },
+      "explanations": {
+        "a": "Incorrect. Larger curvature corresponds to smaller effective mass, not larger.",
+        "b": "Correct. Effective mass is inversely related to the curvature of E–k: m* = ℏ² / (d²E/dk²).",
+        "c": "Incorrect. Effective mass varies with curvature.",
+        "d": "Incorrect. Zero effective mass occurs only in linear dispersions like graphene, not here."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The effective mass (m*) of an electron in a semiconductor depends on:",
+      "answers": {
+        "a": "The slope of the E–k curve",
+        "b": "The curvature of the E–k curve",
+        "c": "The bandgap energy only",
+        "d": "The external electric field strength"
+      },
+      "explanations": {
+        "a": "Incorrect. Group velocity depends on slope, not effective mass.",
+        "b": "Correct. Effective mass is derived from curvature: m* = ℏ² / (d²E/dk²).",
+        "c": "Incorrect. Bandgap affects allowed transitions, not directly m*.",
+        "d": "Incorrect. Electric field modifies motion, not intrinsic effective mass."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "If the bandgap energy Eg of a material is 2 eV, what is the approximate frequency of a photon required to bridge this gap?",
+      "answers": {
+        "a": "4.8 × 10^14 Hz",
+        "b": "7.3 × 10^14 Hz",
+        "c": "3.0 × 10^15 Hz",
+        "d": "1.2 × 10^14 Hz"
+      },
+      "explanations": {
+        "a": "Incorrect. This corresponds to a much lower photon energy than required.",
+        "b": "Correct. Using E = hf → f = E/h, substituting Eg = 2 eV gives ≈ 7.3 × 10^14 Hz.",
+        "c": "Incorrect. That frequency corresponds to a much higher photon energy.",
+        "d": "Incorrect. This is too small to excite the bandgap."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "If ℏ = 1.05 × 10^-34 J·s and k = 2 × 10^9 m^-1, what is the crystal momentum p of an electron?",
+      "answers": {
+        "a": "2.1 × 10^-25 kg·m/s",
+        "b": "1.05 × 10^-23 kg·m/s",
+        "c": "2.1 × 10^-24 kg·m/s",
+        "d": "5.2 × 10^-26 kg·m/s"
+      },
+      "explanations": {
+        "a": "Correct. Using p = ℏk → 1.05×10^-34 × 2×10^9 = 2.1×10^-25 kg·m/s.",
+        "b": "Incorrect. That value is too large; miscalculation of ℏk.",
+        "c": "Incorrect. Off by a factor of 10.",
+        "d": "Incorrect. Too small; incorrect substitution."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "If the conduction band curvature decreases, what happens to the mobility of electrons?",
+      "answers": {
+        "a": "It increases",
+        "b": "It decreases",
+        "c": "It remains constant",
+        "d": "It becomes infinite"
+      },
+      "explanations": {
+        "a": "Incorrect. Less curvature → heavier effective mass → lower mobility.",
+        "b": "Correct. Mobility μ ∝ 1/m*. Decreased curvature increases effective mass, reducing mobility.",
+        "c": "Incorrect. Mobility depends on m*, so it changes here.",
+        "d": "Incorrect. Infinite mobility would require zero effective mass, not reduced curvature."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "A semiconductor with Eg = 1.5 eV primarily absorbs photons with wavelengths:",
+      "answers": {
+        "a": "Greater than 1000 nm",
+        "b": "Between 400-800 nm",
+        "c": "Less than 200 nm",
+        "d": "Exactly 1550 nm"
+      },
+      "explanations": {
+        "a": "Incorrect. Longer wavelengths correspond to lower photon energy, below Eg.",
+        "b": "Correct. Using λ ≈ 1240/Eg ≈ 827 nm, which lies in the visible to near-infrared range.",
+        "c": "Incorrect. Those correspond to far-UV photons with much higher energy than needed.",
+        "d": "Incorrect. 1550 nm corresponds to ≈0.8 eV, insufficient for Eg = 1.5 eV."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    }
+  ]
+}

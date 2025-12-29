@@ -1,0 +1,158 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "In an E–k diagram, the slope of the energy vs. wavevector curve represents:",
+      "answers": {
+        "a": "Momentum",
+        "b": "Group velocity",
+        "c": "Effective mass",
+        "d": "Bandgap energy"
+      },
+      "explanations": {
+        "a": "Incorrect. Momentum depends on ℏk, not directly on the slope.",
+        "b": "Correct. Group velocity is given by v = (1/ℏ) dE/dk, proportional to the slope.",
+        "c": "Incorrect. Effective mass depends on curvature, not slope.",
+        "d": "Incorrect. Bandgap energy is the energy difference between conduction and valence bands."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which physical quantity is directly proportional to the wavevector k in semiconductors?",
+      "answers": {
+        "a": "Group velocity",
+        "b": "Momentum",
+        "c": "Effective mass",
+        "d": "Bandgap energy"
+      },
+      "explanations": {
+        "a": "Incorrect. Group velocity depends on the slope of E–k, not directly on k.",
+        "b": "Correct. Crystal momentum p = ℏk, making it directly proportional to k.",
+        "c": "Incorrect. Effective mass depends on E–k curvature, not k directly.",
+        "d": "Incorrect. Bandgap energy is a fixed material property, independent of k."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In a semiconductor, the bandgap energy (Eg) refers to:",
+      "answers": {
+        "a": "The energy difference between two conduction bands",
+        "b": "The minimum energy required to move an electron from the valence band to the conduction band",
+        "c": "The kinetic energy of free electrons",
+        "d": "The energy stored in the lattice vibrations"
+      },
+      "explanations": {
+        "a": "Incorrect. Eg refers to the gap between valence and conduction bands, not between two conduction bands.",
+        "b": "Correct. Eg is the minimum energy required to excite an electron into the conduction band.",
+        "c": "Incorrect. Kinetic energy is not the same as bandgap energy.",
+        "d": "Incorrect. Lattice vibrations relate to phonons, not Eg."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "A flatter E–k curve around the conduction band minimum indicates:",
+      "answers": {
+        "a": "Smaller effective mass",
+        "b": "Larger effective mass",
+        "c": "Higher group velocity",
+        "d": "Zero bandgap"
+      },
+      "explanations": {
+        "a": "Incorrect. A flat curve means small curvature, leading to larger effective mass.",
+        "b": "Correct. Effective mass m* = ℏ² / (d²E/dk²), so less curvature = larger m*.",
+        "c": "Incorrect. Group velocity depends on slope, not curvature.",
+        "d": "Incorrect. Bandgap is unrelated to curvature near the minimum."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which relation connects effective mass (m*) with the curvature of the E–k diagram?",
+      "answers": {
+        "a": "m* = ℏk / E",
+        "b": "m* = ℏ² / (d²E/dk²)",
+        "c": "m* = E / k²",
+        "d": "m* = Eg / ℏk"
+      },
+      "explanations": {
+        "a": "Incorrect. This formula is not valid in semiconductors.",
+        "b": "Correct. The effective mass formula is m* = ℏ² / (d²E/dk²).",
+        "c": "Incorrect. E/k² does not define effective mass.",
+        "d": "Incorrect. Eg and ℏk are unrelated here."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Among Si, GaAs, and Ge, which has the smallest bandgap energy at room temperature?",
+      "answers": {
+        "a": "Silicon (Si)",
+        "b": "Gallium Arsenide (GaAs)",
+        "c": "Germanium (Ge)",
+        "d": "All have the same Eg"
+      },
+      "explanations": {
+        "a": "Incorrect. Silicon has Eg ≈ 1.1 eV, which is larger than Ge.",
+        "b": "Incorrect. GaAs has Eg ≈ 1.42 eV, larger than both Si and Ge.",
+        "c": "Correct. Germanium has the smallest Eg ≈ 0.66 eV.",
+        "d": "Incorrect. Each material has a different Eg."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "If the curvature of the conduction band increases, what happens to the effective mass?",
+      "answers": {
+        "a": "It decreases",
+        "b": "It increases",
+        "c": "It remains constant",
+        "d": "It becomes zero"
+      },
+      "explanations": {
+        "a": "Correct. Larger curvature means smaller effective mass since m* ∝ 1/(d²E/dk²).",
+        "b": "Incorrect. More curvature does not increase m*; it reduces it.",
+        "c": "Incorrect. Effective mass varies with curvature, so it cannot remain constant.",
+        "d": "Incorrect. Zero effective mass requires a linear E–k relation, which is not the case here."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "For a semiconductor with Eg = 1.2 eV, what is the approximate photon wavelength corresponding to this bandgap?",
+      "answers": {
+        "a": "1033 nm",
+        "b": "689 nm",
+        "c": "450 nm",
+        "d": "300 nm"
+      },
+      "explanations": {
+        "a": "Correct. Using λ ≈ 1240/Eg, we get λ ≈ 1033 nm in the infrared region.",
+        "b": "Incorrect. This wavelength corresponds to ≈1.8 eV, higher than Eg.",
+        "c": "Incorrect. 450 nm corresponds to ≈2.75 eV, much higher than Eg.",
+        "d": "Incorrect. 300 nm is in the UV range and corresponds to ≈4.1 eV."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What happens to group velocity when the E–k curve becomes very steep near the conduction band edge?",
+      "answers": {
+        "a": "Group velocity decreases",
+        "b": "Group velocity increases",
+        "c": "Group velocity becomes zero",
+        "d": "Group velocity becomes negative"
+      },
+      "explanations": {
+        "a": "Incorrect. Steeper slope means faster carriers, not slower.",
+        "b": "Correct. Group velocity v = (1/ℏ) dE/dk, so a steeper slope increases velocity.",
+        "c": "Incorrect. Zero velocity corresponds to flat regions, not steep ones.",
+        "d": "Incorrect. Negative velocity would require opposite slope direction."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    }
+  ]
+}
